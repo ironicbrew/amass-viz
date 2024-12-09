@@ -36,7 +36,7 @@ This project is a web-based tool for visualizing data from `amass.sqlite` files.
 
 2. Place amass.sqllite file in root of cloned repo or note its path
 
-  ```
+  ```bash
   ***slurping noises***
   ```
 
