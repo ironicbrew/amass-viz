@@ -23,30 +23,24 @@ This project is a web-based tool for visualizing data from `amass.sqlite` files.
 0. Clone this repository:
 
    ```bash
-   git clone <repository_url>
-   cd <repository_name>
+   git clone https://github.com/ironicbrew/amass-viz.git
+   cd amass-viz
 
    ```
 
 1. Install dependencies:
 
-   ```go mod tidy
-
-   ```
+   `go mod tidy`
 
 2. Place amass.sqllite file in root of cloned repo or note its path
 
 3. Run the Server
 
-   ```go run main.go --dbPath ./path/to/amass.sqlite --labels
-
-   ```
+   `go run main.go --dbPath ./path/to/amass.sqlite --labels`
 
 4. Open your browser and navigate to:
 
-   ```http://localhost:8081
-
-   ```
+   `http://localhost:8081`
 
 ## Flags
 
