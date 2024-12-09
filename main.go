@@ -146,5 +146,6 @@ func main() {
 	showLineLabel = *labels
 
 	http.HandleFunc("/", httpserver)
+	fmt.Println("Started HTTP Server!")
 	http.ListenAndServe(":8081", nil)
 }
