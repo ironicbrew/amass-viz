@@ -108,7 +108,7 @@ func httpserver(w http.ResponseWriter, _ *http.Request) {
 	graph := charts.NewGraph()
 
 	graph.SetGlobalOptions(
-		charts.WithInitializationOpts(opts.Initialization{Theme: types.ThemeWesteros, Height: "1000px", Width: "2000px"}),
+		charts.WithInitializationOpts(opts.Initialization{Theme: types.ThemeWesteros, Height: "1000px", Width: "1200px"}),
 		charts.WithTitleOpts(opts.Title{
 			Title: "DNS Graph by ironicbrew",
 		}),
@@ -120,11 +120,11 @@ func httpserver(w http.ResponseWriter, _ *http.Request) {
 
 	graph.AddSeries("Series", nodes, links).
 		SetSeriesOptions(
-			charts.WithGraphChartOpts(opts.GraphChart{Force: &opts.GraphForce{Repulsion: 200}, Draggable: opts.Bool(true), Categories: categories}),
+			charts.WithGraphChartOpts(opts.GraphChart{Force: &opts.GraphForce{Repulsion: 150}, Draggable: opts.Bool(true), Categories: categories}),
 			charts.WithLabelOpts(opts.Label{Show: opts.Bool(true), Position: "right"}),
 		)
 
-	graph.PageTitle = "DNS Graph by ironicbrew"
+	graph.PageTitle = "Amass-Viz by ironicbrew"
 
 	// Render the graph chart
 	graph.Render(w)

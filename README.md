@@ -34,19 +34,15 @@ This project is a web-based tool for visualizing data from `amass.sqlite` files.
    go mod tidy
    ```
 
-2. Place amass.sqllite file in root of cloned repo or note its path
-
-  ```bash
-  ***slurping noises***
-  ```
-
-3. Run the Server
+2. Run the Server
 
    ```bash
-   go run main.go --dbPath ./path/to/amass.sqlite --labels
+   go run main.go --dbPath ./path/to/amass.sqlite
    ```
 
-4. Open your browser and navigate to ```http://localhost:8081```
+3. Open your browser and navigate to ```http://localhost:8081```
+
+![Example](./example.png)
 
 ## Flags
 
