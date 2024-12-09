@@ -13,7 +13,7 @@ This project is a web-based tool for visualizing data from `amass.sqlite` files.
 
 ### Prerequisites
 
-0. **Amass (OWASP)**: Run an enumeration on a target domain using AMASS enum
+0. **Amass (OWASP)**: Run an enumeration on a target domain using **[AMASS](https://github.com/owasp-amass/amass)**
 1. **Go (Golang)**: Install from [Go's official site](https://go.dev/).
 2. **SQLite**: Ensure you have SQLite installed on your machine.
 3. **Go Modules**: Ensure `go mod` is enabled for dependency management.
